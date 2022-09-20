@@ -1,0 +1,455 @@
+body{
+    background-color: green;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+}
+.si{
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    
+}
+.su{
+     display: grid;
+     grid-template-columns:auto auto auto auto auto auto  ;
+     text-align: justify;
+    
+     
+}
+.bi{
+    padding-top:15px ;
+    padding-left: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    
+}
+#aem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+#bem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+#cem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+     
+}
+#dem{
+
+  padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+#eem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+#fem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+#gem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+#hem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+#iem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.pee{
+    padding: 8px;
+}
+#jem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+#kem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+#lem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.aem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.bem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black
+    
+}
+.cem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.dem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.eem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.fem{
+
+  padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+}
+    
+.gem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.hem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.iem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.jem{
+
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.kem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.lem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.mem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.nem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+     
+}
+.oem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.pem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.qem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.rem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.sem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.tem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.uem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.vem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.wem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.xem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.yem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.zem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.aaem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.bbem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}.su{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}.wem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}.check{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    padding-right: 80px;
+    
+}
+.ccem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.ddem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.eeem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+     
+}
+.ffem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+     
+}
+.ggem{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.ci{
+    padding-top:15px ;
+    font-size: 20px;
+    text-transform: uppercase;
+    
+}
+.di{
+    padding-top:15px ;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.ki{
+    padding-top:15px ;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+#su{
+    padding: 15px;
+    padding-left: 4px;
+
+}
+#sp{
+    padding: 15px;
+    padding-left: 4px;
+
+}
+.check{
+    padding: 22px;
+    padding-left: 50px;
+    margin-right: 50px;
+}
+.chick{
+    padding-bottom: 20px;
+    padding: 20px;
+     margin-right: 50px;
+
+}
+.b{
+    
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.c{
+    
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.d{
+
+
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+}
+.e{
+   
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+     
+} 
+.f{
+    
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.g{
+   
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+     
+}
+.h{
+ padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+}
+.i{
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.j{
+   
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+     
+}
+.h{
+ padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+}
+.i{
+    
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.j{
+    
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.k{
+    
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.l{
+    
+    padding: 6px;
+    margin-bottom: 32px;
+    color:black;
+    
+}
+.pee{
+    padding-top: 20px;
+    font-size: 700;
+    
+}.dee{
+
+}
