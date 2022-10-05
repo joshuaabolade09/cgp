@@ -1,71 +1,140 @@
 // Get the elements from HTML
-const form = document.querySelector(".form");
-const courseUnits = form.querySelectorAll(".course-unit");
-const courseUnitsArr = Array.from(courseUnits);
-const grade = form.querySelectorAll(".grade");
-const gradeArr = Array.from(grade);
-const point = form.querySelectorAll(".point");
-const pointEmptyArr = Array.from(point);
-const displayGPA = document.querySelector(".display-GPA");
-const button = document.querySelector(".submit");
+let A=5
+let B=4
+let K=3
+let D=2
+let E=1
+let F=0
+function tooth(){
+
+}
+
+let form = document.querySelector(".form");
+let GP=document.querySelector('.display-GPA')
+let st=document.querySelectorAll('.course-code')
+let s = form.querySelectorAll(".course-unit");
+let b=form.querySelectorAll(".score")
+let ore = form.querySelectorAll(".grade");
+let re = document.querySelector("#mee");
+
+let cd = form.querySelectorAll(".point");
+
+let displayGPA = document.querySelector(".display-GPA");
+let k=document.querySelector('#su')
+
+let C=document.querySelector('#wem')
+let bt=document.querySelector('.submit')
+
+const sure=function(){
+   s.value=0
+
+}
 
 // Assign these elements to nothing because we'll use their values later
-let unitValues, grades;
 
-// This function collects the unit values and returns the sum.
-const unitToNumbers = function (arr) {
-  unitValues = arr.map((unit) => (unit ? parseInt(+unit.value) : ""));
-  console.log(unitValues);
+function Sum(){
+  
+  let put=[]
+   for (let i = 0; i < s.length; i++) {
+       
+  put.push(s[i].value)
+  const up=put.map(str=>{
+      return Number(str ) 
+  }
+  )
+  
+     k=up.reduce((b,c)=>b+c,0)
+       document.querySelector('#su').value =k
+  }   
+  let ut=[]
+  for (let c = 0; c < b.length; c++) {
+  ut.push(b[c].value)
+  let pup=ut.map(stm=>{
+  return Number(stm)
+  })
+  let j=pup.reduce((d,e)=>d+e,0)
+   C.value=j
+     let r=[j]
+    for (let up = 0; up < ore.length; up++) {
+      const lement = ore [ up];
+  ut.forEach(function(movement,index){
+           if ( movement >100){
+              ore[index].value=""
+           }
+                   else if ( movement > 69 && movement <100){
+                 ore[index].value="A"
+              }
+              else if( movement > 59 && movement <70 ){
+                 ore[index].value="B"
+  
+              } else if(movement > 50 && movement <60 ){
+                 ore[index].value="C"
+              }
+              else if(movement > 44 && movement <50 ){
+                 ore[index].value="D"
+              }
+              else if(movement > 40 && movement <45 ){
+                 ore[index].value="E"
+              }
+              else  if (movement > 0 && movement <40){
+                 ore[index].value="F"
+              }
+               for (let ind = 0; ind < cd.length; ind++) {
+     const ele= cd[ind];
+      if(ore[index].value==="A"){
+         cd[index].value= A * put[index]
+         }
+      else if(ore[index].value==="B"){
+        cd[index].value= B * put[index]
+         }
+     else if(ore[index].value=="C"){
+      cd[index].value= K * put[index]
+  } 
+  else if(ore[index].value==="D"){
+     cd[index].value= D* put[index]              
+  }
+  else if(ore[index].value==="E"){
+     cd[index].value= E * put[index]
+  }
+     else if(ore[index].value==="F"){
+        cd[index].value= F* put[index]
+           }
+           let ck=[cd[0].value,cd[1].value,cd[2].value,cd[3].value,cd[4].value,cd[5].value,cd[6].value,cd[7].value,cd[8].value
+           , cd[9].value,cd[10].value]
+             const pushing=ck.map(sem=>{
+                return Number(sem)
+              }
+              
+            )
+            let st=pushing.reduce((s,p)=>s+p,0)
+            re.value=st
+            GP.value=(st/k).toFixed(2)
+   
+     }
+  }) 
+  }
+  }
+  }
 
-  return unitValues.reduce((acc, courseunit) => acc + courseunit);
-};
-
-// This function converts the grades to numbers
-const convertGradeToNumbers = function (arr) {
-  if (!arr) return;
-  const arrValue = arr.map((eachGrade) => eachGrade.value);
-
-  grades = arrValue.map((grade) => {
-    if (grade === "A" || grade === "a") return 5;
-    if (grade === "B" || grade === "b") return 4;
-    if (grade === "C" || grade === "c") return 3;
-    if (grade === "D" || grade === "d") return 2;
-    if (grade === "E" || grade === "e") return 1;
-    if (grade === "F" || grade === "f") return 0;
-    else return "";
-  });
-  console.log(grades);
-};
-
-// This function calculate the points and returns the total
-const calculatePoint = function () {
-  const pointArr = unitValues.map((unitValue, index) =>
-    unitValue ? unitValue * grades[index] : ""
-  );
-  console.log(pointArr);
-  console.log(pointEmptyArr);
-  pointEmptyArr.forEach(
-    (eachPoint, index) => (eachPoint.value = pointArr ? pointArr[index] : "")
-  );
-
-  return pointArr.reduce((acc, point) => acc + point);
-};
-
-// This function calculates the GPA
-const calculateGPA = function (points, units) {
-  return (points / units).toFixed(2);
-};
-
-// This is the event listener for the button.
-button.addEventListener("click", function (e) {
-  e.preventDefault();
-
-  const unitTotalNo = unitToNumbers(courseUnitsArr);
-  console.log(unitTotalNo);
-  convertGradeToNumbers(gradeArr);
-  const pointTotalNo = calculatePoint();
-  console.log(pointTotalNo);
-
-  const GPA = calculateGPA(pointTotalNo, unitTotalNo);
-  displayGPA.value = GPA;
-});
+  
+   function calculate(){
+       document.querySelector('#su').value=""
+   document.querySelector('#wem').value=""
+   document.querySelector('#mee').value=""
+   s.forEach(function(movement){
+      movement.value=""
+   })
+  b.forEach(function(movement){
+     movement.value=""
+  })
+  ore.forEach(function(movement){
+   movement.value=""
+})
+cd.forEach(function(movement){
+   movement.value=""
+})
+st.forEach(function(movement){
+   movement.value=""
+})
+Sum()
+  }
