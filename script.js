@@ -5,9 +5,7 @@ let K=3
 let D=2
 let E=1
 let F=0
-function tooth(){
 
-}
 
 let form = document.querySelector(".form");
 let GP=document.querySelector('.display-GPA')
@@ -25,10 +23,8 @@ let k=document.querySelector('#su')
 let C=document.querySelector('#wem')
 let bt=document.querySelector('.submit')
 
-const sure=function(){
-   s.value=0
 
-}
+
 
 // Assign these elements to nothing because we'll use their values later
 
@@ -106,35 +102,45 @@ function Sum(){
               }
               
             )
-            let st=pushing.reduce((s,p)=>s+p,0)
-            re.value=st
-            GP.value=(st/k).toFixed(2)
-   
+             re=pushing.reduce((s,p)=>s+p,0)
+             document.querySelector("#mee").value=re
+             
+           
+ localStorage.setItem("map",JSON.stringify(re))
+ localStorage.setItem("set",JSON.stringify(k))
+ const fre=JSON.parse(localStorage.getItem("set"))
+ const free=JSON.parse(localStorage.getItem("map"))
+ let pel=[]
+ pel.push(fre)
+ 
+
+GP.value=(fre).toFixed(2)
      }
   }) 
   }
   }
   }
-
   
-   function calculate(){
-       document.querySelector('#su').value=""
-   document.querySelector('#wem').value=""
-   document.querySelector('#mee').value=""
-   s.forEach(function(movement){
-      movement.value=""
-   })
-  b.forEach(function(movement){
-     movement.value=""
-  })
-  ore.forEach(function(movement){
-   movement.value=""
+ 
+  function calculate(){
+   document.querySelector('#su').value=""
+document.querySelector('#wem').value=""
+document.querySelector('#mee').value=""
+s.forEach(function(movement){
+  movement.value=""
+})
+b.forEach(function(movement){
+ movement.value=""
+})
+ore.forEach(function(movement){
+movement.value=""
 })
 cd.forEach(function(movement){
-   movement.value=""
+movement.value=""
 })
 st.forEach(function(movement){
-   movement.value=""
+movement.value=""
+
+
 })
-Sum()
   }
