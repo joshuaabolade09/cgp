@@ -22,7 +22,8 @@ let k=document.querySelector('#su')
 
 let C=document.querySelector('#wem')
 let bt=document.querySelector('.submit')
-
+localStorage.setItem("map",JSON.stringify([]))
+localStorage.setItem("set",JSON.stringify([]))
 
 
 
@@ -106,10 +107,12 @@ function Sum(){
              document.querySelector("#mee").value=re
              
            
- localStorage.setItem("map",JSON.stringify(re))
- localStorage.setItem("set",JSON.stringify(k))
  const fre=JSON.parse(localStorage.getItem("set"))
  const free=JSON.parse(localStorage.getItem("map"))
+ fre.push(k);
+ free.push(re);
+ localStorage.setItem("map",JSON.stringify(free))
+ localStorage.setItem("set",JSON.stringify(fre))
  let pel=[]
  pel.push(fre)
  
