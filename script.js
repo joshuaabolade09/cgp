@@ -52,6 +52,7 @@ function Sum(){
   let j=pup.reduce((d,e)=>d+e,0)
    C.value=j
      let r=[j]
+
     for (let up = 0; up < ore.length; up++) {
       const lement = ore [ up];
   ut.forEach(function(movement,index){
@@ -106,22 +107,26 @@ function Sum(){
              re=pushing.reduce((s,p)=>s+p,0)
              document.querySelector("#mee").value=re
              
-           
- const fre=JSON.parse(localStorage.getItem("set"))
- const free=JSON.parse(localStorage.getItem("map"))
- fre.push(k);
- free.push(re);
- localStorage.setItem("map",JSON.stringify(free))
- localStorage.setItem("set",JSON.stringify(fre))
- let pel=[]
- pel.push(fre)
+
+
  
 
-GP.value=(fre).toFixed(2)
+
      }
   }) 
+
+
+
   }
   }
+  const fre=JSON.parse(localStorage.getItem("set"))
+const free=JSON.parse(localStorage.getItem("map"))
+fre.push(k)
+
+free.push(re)
+localStorage.setItem("map",JSON.stringify(free))
+localStorage.setItem("set",JSON.stringify(fre))
+console.log(Number(free))
   }
   
  
@@ -143,6 +148,11 @@ movement.value=""
 })
 st.forEach(function(movement){
 movement.value=""
+       
+
+
+
+
 
 
 })
