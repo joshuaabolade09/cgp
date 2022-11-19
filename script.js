@@ -63,7 +63,7 @@ function Sum(){
    totalscore.value=j
    
 
-
+  }
      //Looping through each score inputs and assigning grade to each score // 
     for (let up = 0; up < grade.length; up++) {
       const lement = grade [ up];
@@ -88,8 +88,15 @@ function Sum(){
               }
               else  if (movement > 0 && movement <40){
                  grade[index].value="F"
-              }
+              
+  }
+
+            });
+         }
+    
                for (let ind = 0; ind < point.length; ind++) {
+                  ut.forEach(function(movement,index){
+               
 
             //Calculating each points by multiplying each grade points of each scores by their units//
      const ele= point[ind];
@@ -110,7 +117,13 @@ function Sum(){
   }
      else if(grade[index].value==="F"){
         point[index].value= F* put[index]
-           }
+        
+           
+      }
+         })
+
+    
+         
          //Put each point value into an array//
            let ck=[point[0].value,point[1].value,point[2].value,point[3].value,point[4].value,point[5].value,point[6].value,point[7].value,point[8].value
            , point[9].value,point[10].value]
@@ -118,34 +131,44 @@ function Sum(){
              const pushing=ck.map(sem=>{
                 return Number(sem)
               }
-              
+            
+            
             )
+               
             //Add the numbers together and initialize it to the total point//
 
              totalPoint=pushing.reduce((s,p)=>s+p,0)
              document.querySelector("#mee").value=totalPoint
+             console.log(totalPoint)
 
 
              cummulativePoint.push(totalPoint)
-             console.log(totalPoint)
+             
+
+             let p=cummulativePoint.reduce((d,e)=>d+e,0)
+             
+             GP.value=p
+
             
+         
+             
             
              
+             
+            }
+         
+     
 
 
  
 
 
-     }
-  }) 
 
   //Initializing the local storage//
 
 
-  }
-  }
+ 
   
-  }
   
   //SEt every user inputs to empty string//
  
@@ -176,3 +199,4 @@ movement.value=""
 
 })
   }
+}
