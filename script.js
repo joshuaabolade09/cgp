@@ -7,7 +7,8 @@ let D=2
 let E=1
 let F=0
 
-let cummulativePoint=[]
+let cummulativePoint=0
+let cummulativeUnit=0
 
 //Global variable and DOM manipulation of each elements//
 
@@ -121,13 +122,8 @@ function Sum() {
 
     totalPoint = pushing.reduce((s, p) => s + p, 0);
     document.querySelector("#mee").value = totalPoint;
-    console.log(totalPoint);
+   
 
-    cummulativePoint.push(totalPoint);
-
-    let p = cummulativePoint.reduce((d, e) => d + e, 0);
-
-    GP.value = p;
   }
 
   //Initializing the local storage//
@@ -137,13 +133,18 @@ function Sum() {
 
 
 function Calculate() {
+  cummulativePoint=cummulativePoint + Number( document.querySelector("#mee").value)
+  cummulativeUnit=cummulativeUnit+Number(document.querySelector('#su').value)
+
+  GP.value=(cummulativePoint /cummulativeUnit).toFixed(2)
+
   document.querySelector("#su").value = "";
   document.querySelector("#wem").value = "";
   document.querySelector("#mee").value = "";
   unit.forEach(function (movement) {
     movement.value = "";
   });
-  score.forEach(function (movement) {
+   score.forEach(function (movement) {
     movement.value = "";
   });
   grade.forEach(function (movement) {
