@@ -98,37 +98,38 @@ function Sum() {
         point[index].value = F * put[index];
       }
     });
-
-    //Put each point value into an array//
-    let ck = [
-      point[0].value,
-      point[1].value,
-      point[2].value,
-      point[3].value,
-      point[4].value,
-      point[5].value,
-      point[6].value,
-      point[7].value,
-      point[8].value,
-      point[9].value,
-      point[10].value,
-    ];
-    //Convert the values from string to Number//
-    const pushing = ck.map((sem) => {
-      return Number(sem);
-    });
-
-    //Add the numbers together and initialize it to the total point//
-
-    totalPoint = pushing.reduce((s, p) => s + p, 0);
-    document.querySelector("#mee").value = totalPoint;
-   
-
   }
 
-  //Initializing the local storage//
+  //Put each point value into an array//
+  let ck = [
+    point[0].value,
+    point[1].value,
+    point[2].value,
+    point[3].value,
+    point[4].value,
+    point[5].value,
+    point[6].value,
+    point[7].value,
+    point[8].value,
+    point[9].value,
+    point[10].value,
+  ];
+  //Convert the values from string to Number//
+  const pushing = ck.map((sem) => {
+    return Number(sem);
+  });
 
-  //SEt every user inputs to empty string//
+  //Add the numbers together and initialize it to the total point//
+
+  totalPoint = pushing.reduce((s, p) => s + p, 0);
+  document.querySelector("#mee").value = totalPoint;
+  
+
+
+  GP.value = (
+    (cummulativePoint + Number(document.querySelector("#mee").value)) /
+    (cummulativeUnit + Number(document.querySelector("#su").value))
+  ).toFixed(2);
 }
 
 
@@ -136,7 +137,6 @@ function Calculate() {
   cummulativePoint=cummulativePoint + Number( document.querySelector("#mee").value)
   cummulativeUnit=cummulativeUnit+Number(document.querySelector('#su').value)
 
-  GP.value=(cummulativePoint /cummulativeUnit).toFixed(2)
 
   document.querySelector("#su").value = "";
   document.querySelector("#wem").value = "";
